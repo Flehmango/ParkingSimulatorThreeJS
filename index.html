@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=utf-8>
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<title>Turbo Parking Simulator</title>
+		<link rel="stylesheet" href="style.css"> 
+	</head>
+
+	<body>
+		<div id="instruction">
+			Celem gry jest znalezienie wszystkich monet porozrzucanych na parkingu.<br>
+			Należy uważać żeby nie uderzyć w zaparkowane samochody, ani nie wjechać w Biedronkę.<br>
+			<br>
+			Sterowanie:<br>
+			WSAD - jazda samochodem<br>
+			<br>
+			<button id="button" onclick='instruction.style.display="none";'>Graj</button>
+		</div>
+
+		<div id="scoreboard">ŻYCIA: 3 
+			<div id="info">H - Instrukcja</div>
+		</div>
+		<div id="gameover"></div>
+
+		<canvas id="canvas"></canvas>
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/87/three.js"></script>
+		<script src="https://unpkg.com/three@0.87.0/examples/js/loaders/OBJLoader.js"> </script>
+		<script src="https://unpkg.com/three@0.87.0/examples/js/loaders/GLTFLoader.js"> </script>
+
+	    <script src="js/components/Coin.js"></script>
+	    <script src="js/components/placeCoins.js"></script>
+	    <script src="js/components/Enemy.js"></script>
+	    <script src="js/components/placeEnemies.js"></script>
+	    <script src="js/components/Lantern.js"></script>
+	    <script src="js/components/Background.js"></script>
+	    <script src="js/components/Car.js"></script>
+
+	    <script src="js/SceneManager.js"></script>
+	    <script src="js/main.js"></script>
+	</body>
+</html>
